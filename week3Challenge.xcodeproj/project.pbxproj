@@ -18,8 +18,10 @@
 		85FD135D17DB7D8F00B7354C /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 85FD135C17DB7D8F00B7354C /* Default-568h@2x.png */; };
 		85FD136017DB7D8F00B7354C /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 85FD135E17DB7D8F00B7354C /* MainStoryboard.storyboard */; };
 		85FD136317DB7D8F00B7354C /* LPViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 85FD136217DB7D8F00B7354C /* LPViewController.m */; };
-		85FD136F17DB7E2400B7354C /* LPMovieClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 85FD136E17DB7E2400B7354C /* LPMovieClass.m */; };
 		85FD137317DB7F8F00B7354C /* movies.plist in Resources */ = {isa = PBXBuildFile; fileRef = 85FD137217DB7F8F00B7354C /* movies.plist */; };
+		85FD137617DB838500B7354C /* LPMovie.m in Sources */ = {isa = PBXBuildFile; fileRef = 85FD137517DB838500B7354C /* LPMovie.m */; };
+		85FD137917DB838D00B7354C /* LPGenre.m in Sources */ = {isa = PBXBuildFile; fileRef = 85FD137817DB838D00B7354C /* LPGenre.m */; };
+		85FD137C17DB839500B7354C /* LPDirector.m in Sources */ = {isa = PBXBuildFile; fileRef = 85FD137B17DB839500B7354C /* LPDirector.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,9 +41,13 @@
 		85FD135F17DB7D8F00B7354C /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
 		85FD136117DB7D8F00B7354C /* LPViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LPViewController.h; sourceTree = "<group>"; };
 		85FD136217DB7D8F00B7354C /* LPViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LPViewController.m; sourceTree = "<group>"; };
-		85FD136D17DB7E2400B7354C /* LPMovieClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LPMovieClass.h; sourceTree = "<group>"; };
-		85FD136E17DB7E2400B7354C /* LPMovieClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LPMovieClass.m; sourceTree = "<group>"; };
 		85FD137217DB7F8F00B7354C /* movies.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = movies.plist; sourceTree = "<group>"; };
+		85FD137417DB838500B7354C /* LPMovie.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LPMovie.h; sourceTree = "<group>"; };
+		85FD137517DB838500B7354C /* LPMovie.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LPMovie.m; sourceTree = "<group>"; };
+		85FD137717DB838D00B7354C /* LPGenre.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LPGenre.h; sourceTree = "<group>"; };
+		85FD137817DB838D00B7354C /* LPGenre.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LPGenre.m; sourceTree = "<group>"; };
+		85FD137A17DB839500B7354C /* LPDirector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LPDirector.h; sourceTree = "<group>"; };
+		85FD137B17DB839500B7354C /* LPDirector.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LPDirector.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,11 +100,7 @@
 				85FD136B17DB7DAA00B7354C /* Views */,
 				85FD136A17DB7DA200B7354C /* Models */,
 				85FD136917DB7D9900B7354C /* Controllers */,
-				85FD135517DB7D8F00B7354C /* LPAppDelegate.h */,
-				85FD135617DB7D8F00B7354C /* LPAppDelegate.m */,
 				85FD135E17DB7D8F00B7354C /* MainStoryboard.storyboard */,
-				85FD136117DB7D8F00B7354C /* LPViewController.h */,
-				85FD136217DB7D8F00B7354C /* LPViewController.m */,
 				85FD134D17DB7D8F00B7354C /* Supporting Files */,
 			);
 			path = week3Challenge;
@@ -122,6 +124,8 @@
 		85FD136917DB7D9900B7354C /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				85FD136117DB7D8F00B7354C /* LPViewController.h */,
+				85FD136217DB7D8F00B7354C /* LPViewController.m */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -129,8 +133,6 @@
 		85FD136A17DB7DA200B7354C /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				85FD136D17DB7E2400B7354C /* LPMovieClass.h */,
-				85FD136E17DB7E2400B7354C /* LPMovieClass.m */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -145,6 +147,8 @@
 		85FD136C17DB7DB400B7354C /* Delegates */ = {
 			isa = PBXGroup;
 			children = (
+				85FD135517DB7D8F00B7354C /* LPAppDelegate.h */,
+				85FD135617DB7D8F00B7354C /* LPAppDelegate.m */,
 			);
 			name = Delegates;
 			sourceTree = "<group>";
@@ -159,6 +163,12 @@
 		85FD137117DB7E9200B7354C /* Data */ = {
 			isa = PBXGroup;
 			children = (
+				85FD137417DB838500B7354C /* LPMovie.h */,
+				85FD137517DB838500B7354C /* LPMovie.m */,
+				85FD137717DB838D00B7354C /* LPGenre.h */,
+				85FD137817DB838D00B7354C /* LPGenre.m */,
+				85FD137A17DB839500B7354C /* LPDirector.h */,
+				85FD137B17DB839500B7354C /* LPDirector.m */,
 			);
 			name = Data;
 			sourceTree = "<group>";
@@ -234,7 +244,9 @@
 				85FD135317DB7D8F00B7354C /* main.m in Sources */,
 				85FD135717DB7D8F00B7354C /* LPAppDelegate.m in Sources */,
 				85FD136317DB7D8F00B7354C /* LPViewController.m in Sources */,
-				85FD136F17DB7E2400B7354C /* LPMovieClass.m in Sources */,
+				85FD137617DB838500B7354C /* LPMovie.m in Sources */,
+				85FD137917DB838D00B7354C /* LPGenre.m in Sources */,
+				85FD137C17DB839500B7354C /* LPDirector.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

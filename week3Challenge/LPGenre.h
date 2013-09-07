@@ -1,13 +1,15 @@
 //
-//  LPMovieClass.m
+//  LPGenre.h
 //  week3Challenge
 //
 //  Created by Michael La Plante on 9/7/13.
 //  Copyright (c) 2013 Michael La Plante. All rights reserved.
 //
 
-#import "LPMovieClass.h"
+#import <Foundation/Foundation.h>
 
-@implementation LPMovieClass
+@interface LPGenre : NSObject
+
+@property (nonatomic, strong) NSString* genre;
 
 @end
